@@ -5,7 +5,9 @@ function Body({body, likes, comments}) {
     return (
         <>
             <div className="body">
-                {body.text}
+                <div className="text">
+                    {body.text}
+                </div>
                 <img src={body.img} alt=""/>
             </div>
         </>
