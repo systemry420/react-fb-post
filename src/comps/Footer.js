@@ -21,11 +21,11 @@ function Footer(props) {
             <div>
                 <ul className="button">
                     <li>
-                        <a href="#" style={liked?
+                        <a style={liked?
                         {color: "blue"}: {color: "gray"}} onClick={()=> handleClick()}>{type}</a>
                     </li>
-                    <li><a href="#">Comment</a></li>
-                    <li><a href="#">Share</a></li>
+                    <li><a>Comment</a></li>
+                    <li><a>Share</a></li>
                 </ul>
             </div>
         )
