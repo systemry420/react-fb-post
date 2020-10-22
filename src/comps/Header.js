@@ -5,11 +5,13 @@ function Header({img, user, time}) {
     return (
         <div className="header">
             <div className="info">
-                <img src={img} />
-                {user}
-                <span className="time">{time}</span>
+                <img src={(img)} alt=""/>
+                <div className="name">
+                    <span>{user}</span>
+                    <span className="time">{time}</span>
+                </div>
             </div>
-            <div>
+            <div style={{color: "gray", fontSize: "2.2em", lineHeight:0}}>
                 ...
             </div>
         </div>

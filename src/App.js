@@ -6,18 +6,28 @@ import Post from "./comps/Post"
 function App() {
   const posts = [
     {
-      img: "a.jpg",
+      img: "https://nakedsecurity.sophos.com/wp-content/uploads/sites/2/2013/08/facebook-silhouette_thumb.jpg?w=250",
       user: "abc",
       time: "2 hours ago",
-      body: {text: "lorem ipsum", img: "a.jpg"},
-      likes: 12
+      body: {text: "lorem ipsum", img: "my.JPG"},
+      nblikes: 12,
+      comments: 3,
     },
     {
-      img: "a.jpg",
+      img: "https://nakedsecurity.sophos.com/wp-content/uploads/sites/2/2013/08/facebook-silhouette_thumb.jpg?w=250",
+      user: "abc",
+      time: "2 hours ago",
+      body: {text: "lorem ipsum", img: "my.JPG"},
+      nblikes: 12,
+      comments: 3,
+    },
+    {
+      img: "https://nakedsecurity.sophos.com/wp-content/uploads/sites/2/2013/08/facebook-silhouette_thumb.jpg?w=250",
       user: "def",
       time: "3 hours ago",
       body: {text: "lorem ipsum", img: "a.jpg"},
-      likes: 32
+      nblikes: 32,
+      comments: 5,
     }
   ]
 
@@ -29,6 +39,7 @@ function App() {
   return (
     <div className="App">
         {mapped}
+        <img src={posts[0].img} alt=""/>
     </div>
   );
 }

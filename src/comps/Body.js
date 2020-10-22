@@ -1,12 +1,14 @@
 import React from 'react'
 import "./../App.css"
 
-function Body({body}) {
+function Body({body, likes, comments}) {
     return (
-        <div className="body">
-            {body.text}
-            <img src={body.img} />
-        </div>
+        <>
+            <div className="body">
+                {body.text}
+                <img src={body.img} alt=""/>
+            </div>
+        </>
     )
 }
 
