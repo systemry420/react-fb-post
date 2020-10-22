@@ -18,9 +18,15 @@ function Footer(props) {
             }
         }
         return (
-            <div className="button">
-                <a href="#" style={liked?
-                {color: "blue"}: {color: "gray"}} onClick={()=> handleClick()}>{type}</a>
+            <div>
+                <ul className="button">
+                    <li>
+                        <a href="#" style={liked?
+                        {color: "blue"}: {color: "gray"}} onClick={()=> handleClick()}>{type}</a>
+                    </li>
+                    <li><a href="#">Comment</a></li>
+                    <li><a href="#">Share</a></li>
+                </ul>
             </div>
         )
     }
@@ -35,8 +41,6 @@ function Footer(props) {
             </div>
             <div className="footer">
                 <Button type="Like"/>
-                <Button type="Comment"/>
-                <Button type="Share"/>
             </div>
         </>
     )
