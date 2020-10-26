@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
-* {
-  margin: 0;
-  box-sizing: border-box;
-}
-
 .App {
   background-color: #e0e0e0;
   min-height: 100vh;
@@ -17,9 +12,9 @@
   background-color: #fff;
   margin: .5em;
   width: 90vw;
-  border-radius: 5px;
+  border-radius: 8px;
   border: none;
-  box-shadow: 0 1px 1px 1px rgb(170, 168, 168);
+  box-shadow: 0 1px 1px 1px #bbb;
 }
 
 @media screen and (max-width: 500px) {
@@ -35,7 +30,7 @@
   border-bottom: 1px solid lightgray;
   display: flex;
   justify-content: space-between;
-  padding: .6em 1em;
+  padding: 1em;
 }
 
 .info {
@@ -124,4 +119,28 @@
 .button li:hover {
   background-color: rgb(230, 230, 230);
   cursor: pointer;
+}
+
+.reactions {
+  background-color: #eee;
+  padding: 3px;
+  border: 1px solid gray;
+  box-shadow: 1px 1px 1px 1px #bbb;
+  margin-bottom: 10px;
+  border-radius: 50px;
+  position: absolute;
+  left: 100px;
+  z-index: 1;
+}
+
+.reactions img {
+  width: 50px;
+  height: 50px;
+  margin: 4px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.reactions img:hover {
+  transform: scale(1.2);
 }
