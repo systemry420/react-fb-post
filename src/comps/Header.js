@@ -11,7 +11,7 @@ function Header({img, user, time}) {
                     <span className="time">{time}</span>
                 </div>
             </div>
-            <div style={{color: "gray", fontSize: "2.2em", lineHeight:0}}>
+            <div style={{color: "gray", fontSize: "2.2em", lineHeight:0.5}}>
                 ...
             </div>
         </div>
